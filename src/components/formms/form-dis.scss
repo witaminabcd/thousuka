@@ -1,0 +1,63 @@
+.form-dis{
+  @include container();
+  @include padding-vertical-30();
+  overflow:hidden;
+  .form-dis-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .form-dis-title{
+      font-family: Montserrat;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 36.4px;
+      text-align: center;
+
+    }
+    form{
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      input{
+        width: 375px;
+        height: 56px;
+        gap: 0px;
+        border-radius: 50px ;
+        opacity: 0px;
+        font-family: Montserrat Alternates;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18.2px;
+        border: 1px solid rgba(219, 219, 219, 1);
+        padding:20px;
+      }
+      .btn-pink{
+        width: 242px;
+      }
+    }
+  }
+
+}
+@media #{$mobile-only-two} {
+  .form-dis{
+    .form-dis-wrap {
+      .form-dis-title {
+        text-align: left;
+      }
+        form{
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
+        gap: 1rem;
+        input {
+          width: 100%;
+        }
+        .btn-pink {
+          width: 100%;
+        }
+        }
+      }
+    }
+
+
+}

@@ -1,0 +1,23 @@
+.t-bottom{
+  display: grid;
+  grid-template-rows: auto ;
+  grid-template-columns: auto auto;
+  align-items: center;
+  .t-bottom__href{
+    a{
+      color: white;
+      padding-bottom: 3px;
+      border-bottom: 1px solid white;
+    }
+  }
+  .t-bottom__chat{
+    justify-self: end;
+    background: #E04B599C;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 20px;
+  }
+}

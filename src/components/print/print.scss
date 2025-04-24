@@ -1,0 +1,173 @@
+.print{
+  @include container();
+  padding:20px 0 300px 0;
+  .print-wrap{
+  position: relative;
+    .print__bl-top{
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between;
+      .print-text{
+        width: calc(50% - 2rem);
+       p{
+         font-family: Montserrat Alternates;
+         font-size: 18px;
+         font-weight: 500;
+         line-height: 27px;
+         text-align: left;
+
+       }
+        span{
+          font-family: Montserrat Alternates;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 36px;
+          text-align: left;
+
+        }
+
+      }
+      .print-imgs{
+        width: calc(50% - 2rem);
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        transform: translateY(80px);
+        .num1{
+          position:absolute;
+          z-index:600;
+          bottom:0;
+          right: 60%;
+        }
+        .num2{
+          position:absolute;
+          right: 35%;
+          z-index:500;
+          bottom:0;
+        }
+        .num3{
+          //position:absolute;
+          right: 0;
+          bottom:0;
+        }
+      }
+    }
+     .print__bl-bottom{
+        background: rgba(81, 121, 222, 1);
+       opacity: 1;
+       z-index: 1200;
+       position: absolute;
+       width: 100%;
+       border-radius: 48px;
+       .print__block-bottom{
+         background:url("../img/imagepr.png");
+         opacity: 0.8;
+         width: 100%;
+         height: 300px;
+         border-radius: 48px;
+         background-size:  100% 300px;
+         position: relative;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         .print__block-count{
+           display: flex;
+          flex-direction: column;
+           .print__block-count__up{
+             font-family: Montserrat;
+             font-size: 80px;
+             font-weight: 900;
+             line-height: 104px;
+             text-align: left;
+              color:white;
+             span{
+               font-family: Montserrat;
+               font-size: 80px;
+               font-weight: 900;
+               line-height: 104px;
+               text-align: left;
+                color:rgba(81, 121, 222, 1);
+
+             }
+
+           }
+           div{
+             font-family: Montserrat Alternates;
+             font-size: 18px;
+             font-weight: 700;
+             line-height: 27px;
+             text-align: left;
+             color:white;
+           }
+         }
+
+       }
+    }
+  }
+}
+
+@media #{$mobile-only-two} {
+  .print{
+    @include container();
+    padding:20px 0 300px 0;
+    .print-wrap {
+      position: relative;
+
+      .print__bl-top {
+        flex-direction: column;
+        gap: 0;
+        .print-text{
+          width: 100%;
+        }
+        .print-imgs {
+          width: 60%;
+          //justify-content: center;
+          margin: 0 auto;
+          transform: translateY(40px);
+          .num1 {
+            width:134px
+          }
+          .num2 {
+            width: 157px;
+          }
+          .num3 {
+            width: 174px;
+          }
+          }
+      }
+      .print__bl-bottom{
+        height: auto;
+        .print__block-bottom{
+          flex-direction:column;
+          .print__block-count{
+            div{
+              font-family: Montserrat Alternates;
+              font-size: 11.48px;
+              font-weight: 700;
+              line-height: 17.23px;
+              text-align: center;
+            }
+            .print__block-count__up {
+
+              font-family: Montserrat;
+              font-size: 51.04px;
+              font-weight: 900;
+              line-height: 66.35px;
+              text-align: center;
+                span{
+                  font-family: Montserrat;
+                  font-size: 51.04px;
+                  font-weight: 900;
+                  line-height: 66.35px;
+                  text-align: center;
+
+                }
+            }
+
+
+            }
+        }
+      }
+    }
+  }
+}

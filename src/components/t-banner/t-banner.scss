@@ -1,0 +1,17 @@
+.t-banner{
+  background: url("../img/back2.png");
+  background-size: cover;
+  height: 567px;
+  .t-banner-wrap{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto auto;
+    height: 100%;
+    justify-content: space-between;
+    @import './t-header/t-header';
+    @import './t-content/t-content';
+  }
+
+
+
+}

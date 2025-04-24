@@ -1,0 +1,16 @@
+.t-header{
+  padding: 20px 0;
+  @include container();
+  .t-header-wrap{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    .t-icons{
+      display: grid;
+      justify-content: end;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.task{
+  overflow:hidden;
+  background-color:  rgba(54, 65, 92, 1);
+
+  .task-wrap{
+    @include container();
+    @include padding-vertical-30();
+    display:flex;
+    gap: 2rem;
+      .task-form{
+        width:70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        //align-items: ;
+        //padding:  30px 0 0 0;
+          .task-form-checkb{
+            display:flex;
+            flex-direction: column;
+            gap:1rem;
+
+            .task-form-cont{
+              label{
+                color:white;
+                padding-left:5px;
+              }
+            }
+
+          }
+
+
+        .task-form-inp{
+          display: flex;
+          gap: 1rem;
+          input{
+            width: 375px;
+            height: 56px;
+
+            padding:20px;
+            border-radius: 50px ;
+            border: 1px solid rgba(219, 219, 219, 1);
+
+          }
+          input[type='submit']{
+            background: rgba(174, 41, 92, 1);
+            border: none;
+            color:white;
+            width: 242px;
+          }
+        }
+
+      }
+    .task-title{
+      width:30%;
+      font-family: Montserrat;
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 83.2px;
+      letter-spacing: -0.05em;
+      text-align: left;
+      color:white;
+
+    }
+  }
+}
+
+@media #{$mobile-only-two} {
+  .task{
+    .task-wrap {
+      flex-direction: column;
+      .task-form {
+        width:100%;
+        .task-form-inp{
+          padding-top:20px;
+        flex-direction: column;
+          width:100%;
+          input{
+            width:100%;
+            padding:20px;
+
+          }
+          input[type='submit']{
+            width:100%;
+            padding:20px;
+
+          }
+      }
+      }
+      .task-title {
+        width:100%;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 36.4px;
+        letter-spacing: -0.05em;
+        text-align: left;
+
+      }
+      }
+
+  }
+}
+
+@media #{$tablet-all-only} {
+  .task{
+    .task-wrap {
+      flex-direction: column;
+      .task-form {
+        width:auto;
+        .task-form-inp{
+          padding-top:20px;
+          //flex-direction: column;
+          width:100%;
+          display: flex;
+          flex-wrap: wrap;
+          input{
+            width:auto;
+            padding:20px;
+
+          }
+          input[type='submit']{
+            width:auto;
+            padding:20px;
+
+          }
+        }
+      }
+      .task-title {
+        width:100%;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 36.4px;
+        letter-spacing: -0.05em;
+        text-align: left;
+
+      }
+    }
+
+  }
+}
