@@ -1,0 +1,28 @@
+.t-fform{
+  padding-bottom: 30px;
+  .t-form{
+    display: grid;
+    gap: 20px;
+    .t-form-title{
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+    .t-form-input{
+      input{
+        width: 100%;
+        padding: 10px 0;
+      }
+    }
+    .t-form-angree{
+      a{
+        border-bottom: 1px solid black;
+      }
+    }
+    @import './t-form-btn/t-form-btn';
+
+  }
+
+}

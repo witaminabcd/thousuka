@@ -1,4 +1,19 @@
 .t-footer{
-  @include container();
-  @include padding-vertical-30();
+  .t-footer-wrap{
+    @include container();
+    @include padding-vertical-30();
+    @import './t-menu/t-menu';
+    @import './t-fform/t-fform';
+  }
+
+
+
+  .t-footer__bottom{
+    background-color: black;
+    color: white;
+    padding: 18px 0;
+    .t-footer__bottom-cont{
+      @include container();
+    }
+  }
 }
