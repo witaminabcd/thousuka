@@ -1,0 +1,9 @@
+.t-catalog{
+  @include container();
+  @include padding-vertical-30();
+  .t-catalog__blocks{
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+  }
+}

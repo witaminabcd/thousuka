@@ -1,0 +1,4 @@
+.t-footer{
+  @include container();
+  @include padding-vertical-30();
+}
