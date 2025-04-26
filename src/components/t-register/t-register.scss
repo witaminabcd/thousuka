@@ -1,0 +1,234 @@
+
+.t-register{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  backdrop-filter: blur(15px);
+  background: #000000A6;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+
+  .t-register-wrap{
+    max-width: 430px;
+    width: 100%;
+    height: 606px;
+    margin: 0 auto;
+    background-color: white;
+
+    border: 1px solid black;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 100%;
+    align-items: start;
+
+    .t-register-top{
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      align-items: center;
+
+      .t-register-logo{
+
+
+      }
+      .t-register-close{
+        justify-content: end;
+        &:after{
+          content: url("../img/крестик.svg");
+          cursor: pointer;
+        }
+      }
+    }
+    .t-register-form{
+      height: 100%;
+      .form-register{
+        display: grid;
+        height: 100%;
+        grid-auto-flow: row;
+        align-content: space-around;
+      }
+      .form-register__title{
+        font-family: Lato;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .form-selects{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: auto auto;
+        .show_underline{
+          border-bottom: 1px solid black;
+        }
+        .form-select{
+          cursor: pointer;
+        }
+      }
+      .form-register__input-tel{
+        display: grid;
+        grid-template-columns: auto;
+
+        input{
+          text-align: center;
+          border: none;
+          width: 100%;
+          border-bottom: 1px solid #CCCCCC;
+          height: 41px;
+        }
+        label{
+          font-family: Lato;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: 5%;
+          text-align: center;
+          color: #9D2235;
+          padding-top: 10px;
+
+        }
+      }
+      .form-register__input-email{
+        display: grid;
+        grid-template-columns: auto;
+
+        input{
+          text-align: center;
+          border: none;
+          width: 100%;
+          border-bottom: 1px solid #CCCCCC;
+          height: 41px;
+        }
+        label{
+          font-family: Lato;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: 5%;
+          text-align: center;
+          color: #9D2235;
+          padding-top: 10px;
+
+
+        }
+      }
+      .hide_input_select{
+        display: none;
+      }
+
+      .form-register__input-code{
+        display: grid;
+        grid-auto-flow: row;
+        gap: 15px;
+        text-align: center;
+        input{
+          border: none;
+          text-align: center;
+        }
+        label{
+          color: #9D2235;
+        }
+        .no-code{
+          font-family: Lato;
+          font-weight: 400;
+          font-size: 11px;
+          line-height: 150%;
+          letter-spacing: 15%;
+          text-align: center;
+          text-transform: uppercase;
+
+        }
+        .no-code-href{
+          font-family: Lato;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          letter-spacing: 10%;
+          text-align: center;
+
+          a{
+            color: #9D2235;
+          }
+        }
+      }
+      .form-register__input-code_hide{
+        display: none;
+      }
+      .form-register__submit{
+        display: grid;
+        justify-content: center;
+        .form-register-btn{
+          background: #D9D9D9;
+          height: 39px;
+          width: 185px;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+
+          font-family: Lato;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          text-align: center;
+          text-transform: uppercase;
+
+        }
+      }
+
+      .form-register__agree{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto auto;
+        align-items: start;
+        justify-content: center;
+        max-width: 60%;
+        margin: 0 auto;
+        input{
+          margin-top: 5px;
+        }
+        div{
+          font-family: Lato;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 150%;
+          letter-spacing: 8%;
+
+          a{
+            font-family: Lato;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 150%;
+            letter-spacing: 8%;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-decoration-offset: 0%;
+            text-decoration-thickness: 0%;
+            color: #9D2235;
+          }
+
+
+
+        }
+      }
+
+    }
+  }
+  .t-register-wrap_big-height{
+    height: 728px;
+  }
+}
+.t-register_show{
+  display: block;
+}

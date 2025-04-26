@@ -8,10 +8,13 @@
     grid-template-columns: auto auto;
     grid-template-rows: auto ;
     justify-content: space-between;
-    &:after{
-      content: url("../img/крестик.svg");
-      cursor: pointer;
+    .close_menu{
+      &:after{
+        content: url("../img/крестик.svg");
+        cursor: pointer;
+      }
     }
+
   }
   .t-mobile-top__lk{
     display: grid;

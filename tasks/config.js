@@ -19,7 +19,7 @@ module.exports = {
     watch: `build`
   },
   scripts: {
-    input: resolve(__dirname, '../src/assets/scripts/main2.js'),
+    input: resolve(__dirname, '../src/assets/scripts/main3.js'),
     other: resolve(__dirname, '../src/assets/scripts/other.js'),
     watch: [
       `src/assets/**/*.{js,ts}`,
