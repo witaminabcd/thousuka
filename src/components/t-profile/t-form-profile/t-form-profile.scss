@@ -1,0 +1,47 @@
+.t-form-profile-cont{
+  padding: 20px 0 15px 0;
+
+  .t-form-profile{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20px;
+    .t-form-profile__title{
+      color: #000000;
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+
+    }
+    input{
+      border: none;
+      padding: 0;
+    }
+    .send-btn-profile{
+      display: grid;
+      justify-content: end;
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 100%;
+      letter-spacing: 5%;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .t-form-profile__data{
+      display: grid;
+      grid-auto-flow: row;
+    }
+    input[type="submit"]{
+      height: 39px;
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      background: #000000;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

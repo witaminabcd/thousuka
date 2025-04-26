@@ -40,25 +40,56 @@ const formRegisterInputTel=document.querySelector('.form-register__input-tel');
 
 const formRegisterInputCode=document.querySelector('.form-register__input-code');
 const formRegisterSubmit=document.querySelector('.form-register__submit');
+const formRegisterBtn=document.querySelector('.form-register-btn');
+
 const tRegisterWrap=document.querySelector('.t-register-wrap');
 
 formRegisterSubmit.addEventListener('click', function(event) {
     tRegisterWrap.classList.add('t-register-wrap_big-height');
     formRegisterInputCode.classList.remove('form-register__input-code_hide');
+    formRegisterBtn.innerHTML = 'ВХОД';
+    setTimeout(() => formRegisterBtn.classList.add('form-register-btn-enter'), 1000);
+
+})
+
+
+
+
+const tProfile=document.querySelector('.t-profile');
+const page=document.querySelector('.page');
+const tRegister=document.querySelector('.t-register');
+
+const tProfileLogoClose =document.querySelector('.t-profile-logo-close');
+tProfileLogoClose.addEventListener('click', function(event) {
+    tProfile.classList.remove('t-profile_show');
+    setTimeout(() => formRegisterBtn.classList.remove('form-register-btn-enter'), 2);
 })
 
 
 document.addEventListener('click', function(event) {
+    const tProfile=document.querySelector('.t-profile');
+
     let tRegister=document.querySelector('.t-register');
     let page=document.querySelector('.page');
     let tRegisterWrap=document.querySelector('.t-register-wrap');
     let formRegisterInputCode=document.querySelector('.form-register__input-code');
-
+    const formRegisterBtn=document.querySelector('.form-register-btn');
     // console.log(tRegister);
     console.log(event.target);
     console.log(event.target.dataset.registerClose );
     // console.log(event.target.classList );
 
+
+    if (event.target.classList.contains("form-register-btn-enter") ) {
+        tProfile.classList.add('t-profile_show');
+
+
+        tRegister.classList.remove('t-register_show');
+        tRegisterWrap.classList.remove('t-register-wrap_big-height');
+        formRegisterInputCode.classList.add('form-register__input-code_hide');
+        page.classList.remove("t-body-overflow_hidden");
+        formRegisterBtn.innerHTML = 'ОТПРАВИТЬ КОД';
+    }
 
     if (event.target.dataset.enterLk ) {
         tRegister.classList.add('t-register_show');
@@ -69,7 +100,7 @@ document.addEventListener('click', function(event) {
         tRegisterWrap.classList.remove('t-register-wrap_big-height');
         formRegisterInputCode.classList.add('form-register__input-code_hide');
         page.classList.remove("t-body-overflow_hidden");
-
+        formRegisterBtn.innerHTML = 'ОТПРАВИТЬ КОД';
 
     }
     if (event.target.dataset.selectNumber ) {

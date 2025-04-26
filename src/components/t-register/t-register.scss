@@ -29,25 +29,7 @@
     grid-template-columns: 100%;
     align-items: start;
 
-    .t-register-top{
-      display: grid;
-      justify-content: space-between;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto;
-      align-items: center;
-
-      .t-register-logo{
-
-
-      }
-      .t-register-close{
-        justify-content: end;
-        &:after{
-          content: url("../img/крестик.svg");
-          cursor: pointer;
-        }
-      }
-    }
+    @import "./t-logo-light/t-logo-light";
     .t-register-form{
       height: 100%;
       .form-register{
@@ -175,6 +157,7 @@
           display: grid;
           justify-content: center;
           align-items: center;
+          cursor: pointer;
 
           font-family: Lato;
           font-weight: 600;
