@@ -75,8 +75,8 @@ document.addEventListener('click', function(event) {
     let formRegisterInputCode=document.querySelector('.form-register__input-code');
     const formRegisterBtn=document.querySelector('.form-register-btn');
     // console.log(tRegister);
-    console.log(event.target);
-    console.log(event.target.dataset.registerClose );
+    // console.log(event.target);
+    // console.log(event.target.dataset.registerClose );
     // console.log(event.target.classList );
 
 
@@ -124,3 +124,7 @@ document.addEventListener('click', function(event) {
     }
 
 });
+
+
+import {tFavorite} from './anycode/favorite.js';
+new tFavorite('.t-icon__like','.t-favorite-close');
