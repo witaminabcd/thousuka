@@ -1,0 +1,36 @@
+
+<div class="t-message">
+    <div class="t-message-wrap">
+        {% include "./t-logo-light/t-logo-light.twig" %}
+        <form class="t-form-message" action="">
+            <div class="t-form-message-title">
+                НАПИШИТЕ НАМ
+            </div>
+            <input type="text" name="firstname" placeholder="Ваше имя" >
+            <input type="email" name="email" placeholder="Ваша эл. почта">
+            <label for="tel">Номер телефона*</label>
+            <input type="tel" name="phone" placeholder="+7___-__-__-__">
+            <label for="messages">Сообщение</label>
+            <textarea name="messages" id="" ></textarea>
+            <div class="t-form-message__file">
+
+
+            <label for="file" class="">Прикрепить фото</label>
+                <label for="file-upload" class="custom-file-upload">
+                   Выбрать >
+                    <input id="file-upload" type="file" style="display:none;"/>
+                </label>
+            <div class="t-form-message__text">
+                <div>Не более 5 файлов общим весом не более 15 мб</div>
+            </div>
+            </div>
+            <div class="send-btn-message">
+                <span>отправить</span>
+            </div>
+            <div class="form-message__agree">
+                <input name="agree" type="checkbox" checked><div>Я СОГЛАСЕН С <a href="">ПУБЛИЧНОЙ ОФЕРТОЙ</a> И <a
+                            href="">ПОЛИТИКОЙ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</a></div>
+            </div>
+        </form>
+    </div>
+</div>

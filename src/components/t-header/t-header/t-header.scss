@@ -1,0 +1,25 @@
+.t-header-shop{
+  @include container();
+  .t-header-wrap{
+    max-width: 430px;
+    width: 100%;
+    padding: 20px ;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    img{
+      filter: brightness(0%);
+    }
+    .t-icons{
+      display: grid;
+      justify-content: end;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      align-items: center;
+      div{
+        cursor: pointer;
+      }
+    }
+    @import './t-menu-mobile/t-menu-mobile';
+  }
+}

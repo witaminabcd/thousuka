@@ -1,0 +1,73 @@
+.t-search{
+  display: none;
+  .t-search-wrap{
+    max-width: 430px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid black;
+    display: grid;
+    gap: 20px;
+    .t-search__top{
+      display: grid;
+      grid-auto-flow: column;
+      &:before{
+        display: grid;
+        justify-content: start;
+        align-content: center;
+        content: url("../img/backarrow.svg");
+        cursor: pointer;
+        //width: 10px;
+      }
+      input[type="search"]{
+        height: 39px;
+        padding: 0;
+      }
+      label{
+        height: 39px;
+        width: 83px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+      }
+    }
+    .t-search__selects{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      .t-search__select{
+        height: 39px;
+        display: grid;
+        width: auto;
+        justify-content: center;
+        align-content: center;
+
+        border: 1px solid black;
+        padding: 10px;
+        div{
+          color: #383838;
+
+        }
+      }
+    }
+    .t-favorites__often{
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 5%;
+
+    }
+    .t-favorites__example{
+      display: grid;
+      justify-content: space-between;
+      grid-auto-flow: column;
+      &:after{
+        content: url("../img/find2.svg");
+      }
+    }
+  }
+}

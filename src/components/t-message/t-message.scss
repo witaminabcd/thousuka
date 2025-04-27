@@ -1,0 +1,136 @@
+.t-message{
+  display: none;
+  .t-message-wrap{
+    @import "./t-logo-light/t-logo-light";
+    padding: 20px;
+    max-width: 430px;
+    width: 100%;
+    border: 1px solid black;
+    .t-form-message{
+      padding-top: 40px;
+      display: grid;
+      grid-auto-flow: row;
+      gap: 30px;
+      .t-form-message-title{
+        text-align: center;
+        font-family: Lato;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+
+      }
+      input{
+        border: none;
+        text-align: center;
+        color: #9D2235!important;
+
+      }
+      ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    #9D2235;
+      }
+      :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    #9D2235;
+        opacity:  1;
+      }
+      ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    #9D2235;
+        opacity:  1;
+      }
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color:    #9D2235;
+      }
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color:    #9D2235;
+      }
+
+      ::placeholder { /* Most modern browsers support this now. */
+        color:    #9D2235;
+      }
+      input[type="tel"]{
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+      }
+      label[for="tel"]{
+        text-align: center;
+        color: #9D2235;
+      }
+      label{
+        color: #9D2235;
+      }
+      label[for="file"]{
+        color: black;
+      }
+      textarea{
+        color: #9D2235;
+        border: none;
+        border-bottom: 1px solid black;
+      }
+      .t-form-message__file{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        input[type="file"]{
+          background-color: white;
+          border: none;
+        }
+        .custom-file-upload{
+          cursor: pointer;
+        }
+        max-width: 50%;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .send-btn-message{
+        width: 185px;
+        height: 39px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        background-color: black;
+        margin: 0 auto;
+        span{
+          color: white;
+        }
+      }
+      .form-message__agree{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto auto;
+        align-items: start;
+        justify-content: center;
+        max-width: 60%;
+        margin: 0 auto;
+        input{
+          margin-top: 5px;
+        }
+        div{
+          font-family: Lato;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 150%;
+          letter-spacing: 8%;
+
+          a{
+            font-family: Lato;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 150%;
+            letter-spacing: 8%;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-decoration-offset: 0%;
+            text-decoration-thickness: 0%;
+            color: #9D2235;
+          }
+
+
+
+        }
+      }
+    }
+  }
+}
+

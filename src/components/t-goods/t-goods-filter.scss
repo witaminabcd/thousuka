@@ -1,0 +1,80 @@
+
+.t-goods-filter {
+  .t-goods-colonka-gorizont{
+    .t-goods__blocks{
+      @include container();
+      display: flex;
+      flex-wrap: wrap;
+      .t-goods__block{
+        width: 100%!important;
+        .t-goods-img{
+          img{
+            width: 100%;
+          }
+
+        }
+      }
+    }
+  }
+  .t-goods-title {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0 40px 0;
+  }
+
+  .t-goods-t-filters {
+    @include container();
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    .t-goods-t-filter:nth-child(1) {
+      display: grid;
+      grid-auto-flow: column;
+      align-content: center;
+      justify-content: center;
+      gap: 10px;
+
+      span{
+        font-family: Lato;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+      }
+
+
+      &:after {
+        content: url("../img/arrowmini.svg");
+        height: 10px;
+        margin-bottom: 3px;
+      }
+    }
+    .t-goods-t-filter:nth-child(2) {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 20px;
+      .colonka_hide{
+        filter: invert(13%) sepia(94%) saturate(6140%) hue-rotate(360deg) brightness(109%) contrast(116%);
+      }
+      .t-goods-t-filter__mini-red{
+
+      }
+      .t-goods-t-filter__mini{
+
+      }
+      .t-goods-t-filter__big{
+
+      }
+    }
+
+  }
+}
+
+

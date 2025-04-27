@@ -1,0 +1,36 @@
+.t-mobile-bottom{
+  background: #D9D9D9;
+  padding: 25px;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+
+  .t-mobile-bottom-wrap{
+    display: grid;
+    gap: 20px;
+    .t-mobile-bottom__connect{
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 3%;
+      text-align: center;
+      color: #9D2235;
+
+    }
+    .t-mobile-bottom__support{
+      line-height: 20px;
+    }
+    .social-icons{
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: auto auto auto;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+}

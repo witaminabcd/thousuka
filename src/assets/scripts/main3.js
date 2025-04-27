@@ -128,3 +128,7 @@ document.addEventListener('click', function(event) {
 
 import {tFavorite} from './anycode/favorite.js';
 new tFavorite('.t-icon__like','.t-favorite-close');
+
+import {tFiltersMini} from './anycode/filter-mini.js';
+new tFiltersMini();
+
