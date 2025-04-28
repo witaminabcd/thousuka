@@ -1,0 +1,46 @@
+.t-checkout{
+  .t-checkout-wrap{
+    @include container();
+    .t-checkout-form{
+      display: grid;
+      grid-auto-flow: row;
+      gap: 20px;
+      input{
+        border: none;
+      }
+      .t-checkout-form-phone{
+        display: grid;
+        grid-auto-flow: row;
+        input{
+          border-bottom: 1px solid #CCCCCC;
+          padding: 5px;
+        }
+      }
+      .t-checkout-delivery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        .t-checkout-delivery__block:last-child{
+          display: grid;
+          grid-auto-flow: row;
+          gap: 15px;
+        }
+      }
+      @import "./t-item-mini/t-item-mini";
+      .t-item-mini-submit{
+        input{
+          height: 39px;
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          text-align: center;
+          width: 100%;
+          background: #D9D9D9;
+
+        }
+      }
+      .t-item-mini-minitext{
+        text-align: center;
+      }
+    }
+  }
+}

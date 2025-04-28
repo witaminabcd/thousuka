@@ -1,3 +1,8 @@
 .t-video{
   @include padding-vertical-30();
+  .t-video-fraim{
+    img{
+      width: 100%;
+    }
+  }
 }

@@ -1,0 +1,40 @@
+{% extends '../assets/layout/base.twig' %}
+
+{% block top %}
+
+{% endblock %}
+
+{% block body %}
+
+    {% set title = 'Главная - home' %}
+    {% set meta_d = 'Описание' %}
+    {% set theme_color = '#FFFFFF' %}
+    {% set body_class = 'page' %}
+
+
+
+    {% include '../components/t-header/t-header.twig' %}
+
+    {% include '../components/t-cart/t-cart.twig' %}
+
+
+    {% include '../components/t-modal/t-modal.twig' %}
+    {% include '../components/t-register/t-register.twig' %}
+    {% include '../components/t-profile/t-profile.twig' %}
+    {% include '../components/t-favorites/t-favorites.twig' %}
+    {% include '../components/t-favorite-good/t-favorites-good.twig' %}
+    {% include '../components/t-search/t-search.twig' %}
+    {% include '../components/t-message/t-message.twig' %}
+
+
+    {% include '../components/t-footer/t-footer.twig' %}
+
+
+
+
+
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

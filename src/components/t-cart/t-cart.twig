@@ -1,0 +1,73 @@
+<div class="t-cart">
+    <div class="t-cart-wrap">
+        <div class="t-cart-title">
+            Ваша корзина <span>3 товара</span>
+        </div>
+        <div class="t-cart-delete">
+            Удалить (3)
+        </div>
+
+            {% include "./t-item-mini/t-item-mini.twig" %}
+        {% include "./t-item-mini/t-item-mini.twig" %}
+        {% include "./t-item-mini/t-item-mini.twig" %}
+        {% include "./t-item-mini/t-item-mini.twig" %}
+
+        <div class="t-cart-subtitle">
+            Товары которые не войдут в заказ
+        </div>
+        {% include "./t-item-mini/t-item-mini.twig" %}
+        {% include "./t-item-mini/t-item-mini.twig" %}
+        {% include "./t-item-mini/t-item-mini.twig" %}
+
+        <div class="t-cart-detail-wrap">
+
+
+        <div class="t-cart-detail-title">
+            Детали заказа
+        </div>
+        <div class="t-cart-detail-card">
+            <div class="t-cart-detail-card__block t-cart-detail-card__block-loa">
+                Карта лояльности
+                <br>
+                <span>Не применена</span>
+            </div>
+            <div class="t-cart-detail-card__block t-cart-detail-card__block-btn">
+                <span>активировать</span>
+            </div>
+        </div>
+        <div class="t-cart-details">
+
+            <div class="t-cart-detail">
+                <div class="t-cart-detail__block">
+                    Товары на сумму
+                </div>
+                <div class="t-cart-detail__block">
+                    65 100 ₽
+                </div>
+            </div>
+            <div class="t-cart-detail">
+                <div class="t-cart-detail__block">
+                    Скидка
+                </div>
+                <div class="t-cart-detail__block">
+                    -12 300 ₽
+                </div>
+            </div>
+            <div class="t-cart-detail">
+                <div class="t-cart-detail__block">
+                    Итого
+                </div>
+                <div class="t-cart-detail__block">
+                    52 800 ₽
+                </div>
+            </div>
+        </div>
+        <div class="t-cart-detail-delivery">
+            Доставка не включена
+        </div>
+        <div class="t-cart-detail-submit">
+            <span>оформить заказ</span>
+        </div>
+        </div>
+    </div>
+</div>

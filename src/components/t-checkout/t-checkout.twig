@@ -1,0 +1,63 @@
+<div class="t-checkout">
+    <div class="t-checkout-wrap">
+
+        <form class="t-checkout-form">
+            <div class="t-checkout-form-title">
+                Оформление заказа
+            </div>
+            <input type="text" name="family" placeholder="Фамилия*">
+            <input type="text" name="name" placeholder="Имя*">
+            <input type="text" name="secondname" placeholder="Отчество">
+            <div class="t-checkout-form-phone">
+                <label  for="phone">Номер телефона *</label>
+                <input type="tel" name="phone" placeholder="+7___-__-__-__">
+            </div>
+
+            <div class="t-checkout-delivery">
+                <div class="t-checkout-delivery__block">
+                    Способ доставки
+                </div>
+                <div class="t-checkout-delivery__block">
+                    <div class="t-checkout-delivery-cont">
+                        <input type="checkbox" name="posiibility">
+                        <label for="posiibility">Доставка</label>
+
+                    </div>
+                    <div class="t-checkout-delivery-cont">
+                        <input type="checkbox" name="posiibility2">
+                        <label for="posiibility">Пункты самовывоза</label>
+
+                    </div>
+                    <div class="t-checkout-delivery-cont">
+
+                        <input type="checkbox" name="posiibility3">
+                        <label for="posiibility">Забрать в магазине</label>
+                    </div>
+
+                </div>
+            </div>
+            {% include "./t-item-mini/t-item-mini.twig" %}
+            <div class="t-item-mini-adress">
+                <input type="text" name="addres" placeholder="Адрес">
+            </div>
+            <div class="t-item-mini-room">
+                <input type="text" name="room" placeholder="Квартира, оффис">
+            </div>
+            <div class="t-item-mini-comment">
+                <input type="text" name="comment" placeholder="Комментарии для курьера">
+            </div>
+            <div class="t-item-mini-add">
+
+                <input type="checkbox" name="callback" checked>
+                <label for="callback">Позвонить мне по поводу уточнения деталей заказа </label>
+            </div>
+            <div class="t-item-mini-submit">
+                <input type="submit" value="оформить заказ">
+            </div>
+            <div class="t-item-mini-minitext">
+                Нажимая кнопку “Оформить заказ”, вы принимаете условия Публичной оферты и соглашаетесь с политикой обработки персональных данных
+
+            </div>
+        </form>
+    </div>
+</div>

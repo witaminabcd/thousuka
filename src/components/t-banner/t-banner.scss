@@ -3,11 +3,14 @@
   background-size: cover;
   height: 567px;
   .t-banner-wrap{
-    display: grid;
-    grid-auto-rows: auto;
-    grid-auto-columns: auto auto;
+    @include container();
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    width: 100%;
+    max-width: 100%;
     justify-content: space-between;
+    align-content: space-between;
     @import './t-header/t-header';
     @import './t-content/t-content';
   }

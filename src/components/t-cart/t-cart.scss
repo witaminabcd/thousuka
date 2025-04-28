@@ -1,0 +1,98 @@
+.t-cart{
+  .t-cart-wrap{
+    @include container();
+    .t-cart-title{
+      span{
+        font-family: Lato;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 5%;
+        color: #979797;
+
+      }
+    }
+    .t-cart-delete{
+      text-align: end;
+      font-family: Lato;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 5%;
+
+    }
+    .t-cart-subtitle{
+        padding: 20px 0;
+    }
+
+    @import "./t-item-mini/t-item-mini";
+    .t-cart-detail-wrap{
+      display: grid;
+      gap: 20px;
+      padding-top: 20px;
+      .t-cart-detail-title{
+        font-family: Lato;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 5%;
+
+      }
+      .t-cart-detail-card{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        .t-cart-detail-card__block{
+
+          width: calc(50% - 10px);
+        }
+        .t-cart-detail-card__block-loa{
+          span{
+            font-family: Lato;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 5%;
+
+          }
+        }
+        .t-cart-detail-card__block-btn{
+          height: 39px;
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          background: #D9D9D9;
+
+        }
+      }
+      .t-cart-details{
+        display: grid;
+        gap: 10px;
+        .t-cart-detail{
+          display: grid;
+          grid-auto-flow: column;
+          justify-content: space-between;
+        }
+      }
+      .t-cart-detail-delivery{
+        font-family: Lato;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 5%;
+        text-align: right;
+
+      }
+      .t-cart-detail-submit{
+        display: grid;
+        height: 39px;
+        justify-content: center;
+        align-content: center;
+        background-color: black;
+        color: white;
+      }
+    }
+
+  }
+
+}
