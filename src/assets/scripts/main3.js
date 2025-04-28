@@ -132,3 +132,5 @@ new tFavorite('.t-icon__like','.t-favorite-close');
 import {tFiltersMini} from './anycode/filter-mini.js';
 new tFiltersMini();
 
+import {filtersHide} from './anycode/filter-hide.js';
+new filtersHide();

@@ -1,0 +1,138 @@
+.t-filters {
+  .t-filters-wrap {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    .t-filters-title {
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+
+    }
+
+    .t-filters__blocks {
+      display: grid;
+      grid-auto-flow: row;
+      gap: 10px;
+
+      .t-filters__block {
+        display: grid;
+
+        grid-auto-flow: column;
+        justify-content: space-between;
+
+        .t-filter-contents {
+          display: none;
+        }
+
+        &:after {
+          content: url("../img/awwow.svg");
+        }
+      }
+
+      .t-filters__block_open {
+        display: grid;
+        position: relative;
+        grid-auto-flow: row;
+        gap: 5px;
+        .t-filter-contents {
+          display: grid;
+          padding: 10px 0;
+          gap: 5px;
+
+          .t-filter-content:nth-child(1) {
+            margin-bottom: 20px;
+
+          }
+        }
+
+        .t-filter-contents-color {
+          display: grid;
+          grid-auto-flow: row;
+
+          .t-filter-content:nth-child(1) {
+            margin-bottom: auto;
+          }
+          .t-filter-content {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            input{
+              margin-bottom: 2px;
+            }
+            span {
+              width: 10px;
+              height: 10px;
+              background-color: black;
+              border-radius: 10px;
+              display: block;
+            }
+          }
+        }
+
+
+        .t-filter-contents-order{
+          .t-filter-content:nth-child(1) {
+            margin-bottom: auto;
+          }
+          .t-filter-content{
+            display: flex;
+            gap: 5px;
+            align-items: start;
+            input{
+              margin-top: 3px;
+            }
+            label{
+              display: flex;
+              flex-direction: column;
+              span{
+                font-family: Lato;
+                font-weight: 275;
+                font-size: 11px;
+                line-height: 100%;
+                letter-spacing: 0%;
+
+              }
+            }
+          }
+        }
+
+        &:after {
+          content: url("../img/awwow.svg");
+          transform: rotate(180deg);
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+    .t-filters__buttoms{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap:20px;
+      justify-content: space-between;
+      .t-filters__buttom__clear{
+        border: 1px solid black;
+        color: black;
+        height: 39px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+
+      }
+      .t-filters__buttom__show{
+        color: white;
+        height: 39px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        background-color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}

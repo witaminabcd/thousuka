@@ -1,0 +1,104 @@
+.item{
+  @include container();
+  .item-wrap{
+    //@include container();
+//margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    .item-slaider{
+      img{
+        width: 100%;
+      }
+    }
+    .item-name{
+      font-family: Lato;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 3%;
+
+    }
+    .item-price{
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 3%;
+
+    }
+    .t-filters__block{
+      position: relative;
+      &:after {
+        content: url("../img/awwow.svg");
+        transform: rotate(180deg);
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .t-filter-contents-color {
+        display: grid;
+        grid-auto-flow: row;
+
+
+        .t-filter-content:nth-child(1) {
+          margin-bottom: auto;
+        }
+        .t-filter-content {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          input{
+            margin-bottom: 2px;
+          }
+          span {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 10px;
+            display: block;
+          }
+        }
+      }
+    }
+
+    .item__buttons{
+      display: grid;
+      grid-template-columns: 3fr 1fr ;
+      gap: 20px;
+      .item__button{
+        height: 39px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        background-color: black;
+        span{
+          color: white;
+        }
+      }
+      .item__button:nth-child(2){
+        background-color: white;
+        border: 1px solid black;
+      }
+    }
+    .item__detail{
+      display: grid;
+      gap: 10px;
+      .item__detail-article{
+        font-family: Lato;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 5%;
+      }
+    }
+    .item-options{
+      .item-option{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        //grid-auto-flow: column;
+        justify-content: start;
+        gap: 20px;
+      }
+    }
+  }
+}
